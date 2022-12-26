@@ -2,7 +2,7 @@
 // Original definitions by: Siraj Alam https://github.com/sirajalam049
 
 declare module 'react-native-walkthrough-tooltip' {
-  import React from 'react';
+  import React, { PropsWithChildren } from 'react';
   import { GestureResponderEvent, StyleProp, ViewStyle } from 'react-native';
 
   type Orientation =
@@ -166,7 +166,7 @@ declare module 'react-native-walkthrough-tooltip' {
         </Tooltip>
     ```
      */
-  class Tooltip extends React.Component<TooltipProps> {}
+  class Tooltip extends React.Component<PropsWithChildren<TooltipProps>> {}
 
   export default Tooltip;
 }
